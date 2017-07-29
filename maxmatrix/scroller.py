@@ -1,11 +1,11 @@
 from time import sleep_ms
 
 class Scroller:
-	def __init__(self,display,font,maxInUse=4,delay=0):
+	def __init__(self,display,font,delay=0):
 		self.display=display
 		self.font=font
 		self.delay=delay
-		self.maxInUse=maxInUse
+		maxInUse = display.num
 		self.maxNumber=maxInUse*8
 
 	def brightness(self,value):
